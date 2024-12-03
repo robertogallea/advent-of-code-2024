@@ -4,12 +4,12 @@ namespace Robertogallea\AdventOfCode2024;
 
 class Day03
 {
-    public function solveFirstPart($list)
+    public function solveFirstPart($list): int
     {
         return $this->executeInstructions($list);
     }
 
-    public function solveSecondPart($list)
+    public function solveSecondPart($list): int
     {
         $initial = $this->executeInstructions($list);
 
@@ -25,7 +25,7 @@ class Day03
         );
     }
 
-    public function executeInstructions($list): mixed
+    public function executeInstructions($list): int
     {
         $matches = [];
         $pattern = '/mul\((\d+),(\d+)\)/';

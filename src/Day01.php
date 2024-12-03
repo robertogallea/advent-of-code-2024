@@ -4,7 +4,7 @@ namespace Robertogallea\AdventOfCode2024;
 
 class Day01
 {
-    public function solveFirstPart(string $list)
+    public function solveFirstPart(string $list): int
     {
         list($left, $right) = $this->prepareInput($list);
 
@@ -18,7 +18,7 @@ class Day01
 
     }
 
-    public function solveSecondPart($list)
+    public function solveSecondPart($list): int
     {
         list($left, $right) = $this->prepareInput($list);
 
@@ -32,9 +32,7 @@ class Day01
             return $first * $occurrences;
         }, $left);
 
-        $sum = array_reduce($similarities, fn ($first, $second) => $first + $second, 0);
-
-        return $sum;
+        return array_reduce($similarities, fn ($first, $second) => $first + $second, 0);
     }
 
     /**

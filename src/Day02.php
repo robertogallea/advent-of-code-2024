@@ -4,7 +4,7 @@ namespace Robertogallea\AdventOfCode2024;
 
 class Day02
 {
-    public function solveFirstPart($list)
+    public function solveFirstPart($list): int
     {
         $list = explode("\n", $list);
 
@@ -20,7 +20,7 @@ class Day02
         return $safeReports;
     }
 
-    private function isReportSafe(array $report)
+    private function isReportSafe(array $report): bool
     {
         $diff = [];
 
@@ -41,14 +41,14 @@ class Day02
         return ((min($diff) > 0) || (max($diff) < 0));
     }
 
-    private function isRecordSlowlyChanging(array $diff)
+    private function isRecordSlowlyChanging(array $diff): bool
     {
         return min($diff) > 0 ?
             (max($diff) <= 3) && (min($diff) >= 1) :
             (min($diff) >= -3) && (max($diff) <= -1);
     }
 
-    public function solveSecondPart($list)
+    public function solveSecondPart($list): int
     {
         $safeReports = 0;
 
