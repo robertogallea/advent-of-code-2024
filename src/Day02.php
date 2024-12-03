@@ -48,15 +48,6 @@ class Day02
             (min($diff) >= -3) && (max($diff) <= -1);
     }
 
-    /**
-     * @param  array  $report
-     * @return bool
-     */
-    public function checkReport(array $report): bool
-    {
-
-    }
-
     public function solveSecondPart($list)
     {
         $safeReports = 0;
