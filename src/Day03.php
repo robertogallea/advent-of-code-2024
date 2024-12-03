@@ -4,7 +4,6 @@ namespace Robertogallea\AdventOfCode2024;
 
 class Day03
 {
-
     public function solveFirstPart($list)
     {
         return $this->executeInstructions($list);
@@ -21,7 +20,7 @@ class Day03
         preg_match_all($pattern, $list, $matches);
         return array_reduce(
             $matches[1],
-            fn($carry, $item) => $carry - $this->executeInstructions($item),
+            fn ($carry, $item) => $carry - $this->executeInstructions($item),
             $initial
         );
     }
@@ -35,7 +34,7 @@ class Day03
             array_map(function ($num1, $num2) {
                 return $num1 * $num2;
             }, $matches[1], $matches[2]),
-            fn($num1, $num2) => $num1 + $num2
+            fn ($num1, $num2) => $num1 + $num2
         );
     }
 

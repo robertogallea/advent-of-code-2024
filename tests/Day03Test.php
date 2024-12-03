@@ -8,8 +8,6 @@ use Robertogallea\AdventOfCode2024\Day03;
 
 class Day03Test extends TestCase
 {
-
-
     #[Test]
     #[DataProvider('part1List')]
     public function it_works_with_part1($list, $expectedResult)

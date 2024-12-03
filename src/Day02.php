@@ -4,7 +4,6 @@ namespace Robertogallea\AdventOfCode2024;
 
 class Day02
 {
-
     public function solveFirstPart($list)
     {
         $list = explode("\n", $list);

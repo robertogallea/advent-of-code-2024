@@ -4,15 +4,14 @@ namespace Robertogallea\AdventOfCode2024;
 
 class Day01
 {
-
     public function solveFirstPart(string $list)
     {
         list($left, $right) = $this->prepareInput($list);
 
         sort($left);
         sort($right);
-        $diffs = array_map(fn($first, $second) => abs($first - $second), $left, $right);
-        $sum = array_reduce($diffs, fn($first, $second) => $first + $second, 0);
+        $diffs = array_map(fn ($first, $second) => abs($first - $second), $left, $right);
+        $sum = array_reduce($diffs, fn ($first, $second) => $first + $second, 0);
 
         return $sum;
 
@@ -33,7 +32,7 @@ class Day01
             return $first * $occurrences;
         }, $left);
 
-        $sum = array_reduce($similarities, fn($first, $second) => $first + $second, 0);
+        $sum = array_reduce($similarities, fn ($first, $second) => $first + $second, 0);
 
         return $sum;
     }
