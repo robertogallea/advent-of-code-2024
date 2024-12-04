@@ -11,6 +11,8 @@ class Day03
 
     public function solveSecondPart($list): int
     {
+        $list .= 'do'; // to handle the case when there is a final `do`
+
         $initial = $this->executeInstructions($list);
 
         $matches = [];
