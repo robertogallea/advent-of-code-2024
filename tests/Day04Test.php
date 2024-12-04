@@ -23,17 +23,19 @@ class Day04Test extends TestCase
     public static function part1List()
     {
         return [
-            ["MMMSXXMASM
-MSAMXMSMSA
-AMXSXMAAMM
-MSAMASMSMX
-XMASAMXAMM
-XXAMMXXAMA
-SMSMSASXSS
-SAXAMASAAA
-MAMMMXMMMM
-MXMXAXMASX", 18],
-            [file_get_contents(__DIR__."/Data/Day04/part1.txt"), 2547]
+            yield 'example' => [
+                "MMMSXXMASM".PHP_EOL.
+                "MSAMXMSMSA".PHP_EOL.
+                "AMXSXMAAMM".PHP_EOL.
+                "MSAMASMSMX".PHP_EOL.
+                "XMASAMXAMM".PHP_EOL.
+                "XXAMMXXAMA".PHP_EOL.
+                "SMSMSASXSS".PHP_EOL.
+                "SAXAMASAAA".PHP_EOL.
+                "MAMMMXMMMM".PHP_EOL.
+                "MXMXAXMASX", 18
+            ],
+            yield 'actual input' => [file_get_contents(__DIR__."/Data/Day04/part1.txt"), 2547]
         ];
     }
 
@@ -51,17 +53,19 @@ MXMXAXMASX", 18],
     public static function part2List()
     {
         return [
-            ["MMMSXXMASM
-MSAMXMSMSA
-AMXSXMAAMM
-MSAMASMSMX
-XMASAMXAMM
-XXAMMXXAMA
-SMSMSASXSS
-SAXAMASAAA
-MAMMMXMMMM
-MXMXAXMASX", 9],
-            [file_get_contents(__DIR__."/Data/Day04/part2.txt"), 1939]
+            yield 'example' => [
+                "MMMSXXMASM".PHP_EOL.
+                "MSAMXMSMSA".PHP_EOL.
+                "AMXSXMAAMM".PHP_EOL.
+                "MSAMASMSMX".PHP_EOL.
+                "XMASAMXAMM".PHP_EOL.
+                "XXAMMXXAMA".PHP_EOL.
+                "SMSMSASXSS".PHP_EOL.
+                "SAXAMASAAA".PHP_EOL.
+                "MAMMMXMMMM".PHP_EOL.
+                "MXMXAXMASX", 9
+            ],
+            yield 'actual input' => [file_get_contents(__DIR__."/Data/Day04/part2.txt"), 1939]
         ];
     }
 

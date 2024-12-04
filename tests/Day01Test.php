@@ -22,13 +22,15 @@ class Day01Test extends TestCase
     public static function part1List()
     {
         return [
-            ["3   4
-4   3
-2   5
-1   3
-3   9
-3   3", 11],
-            [file_get_contents(__DIR__."/Data/Day01/part1.txt"), 2904518]
+            yield 'example' => [
+                "3   4".PHP_EOL.
+                "4   3".PHP_EOL.
+                "2   5".PHP_EOL.
+                "1   3".PHP_EOL.
+                "3   9".PHP_EOL.
+                "3   3", 11
+            ],
+            yield 'actual input' => [file_get_contents(__DIR__."/Data/Day01/part1.txt"), 2904518]
         ];
     }
 
@@ -46,13 +48,15 @@ class Day01Test extends TestCase
     public static function part2List()
     {
         return [
-            ["3   4
-4   3
-2   5
-1   3
-3   9
-3   3", 31],
-            [file_get_contents(__DIR__."/Data/Day01/part2.txt"), 18650129]
+            yield 'example' => [
+                "3   4".PHP_EOL.
+                "4   3".PHP_EOL.
+                "2   5".PHP_EOL.
+                "1   3".PHP_EOL.
+                "3   9".PHP_EOL.
+                "3   3", 31
+            ],
+            yield 'actual input' => [file_get_contents(__DIR__."/Data/Day01/part2.txt"), 18650129]
         ];
     }
 
