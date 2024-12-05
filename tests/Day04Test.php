@@ -4,7 +4,6 @@ namespace Tests;
 
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Attributes\Test;
-use Robertogallea\AdventOfCode2024\Day03;
 use Robertogallea\AdventOfCode2024\Day04;
 
 class Day04Test extends TestCase
