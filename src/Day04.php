@@ -25,7 +25,7 @@ class Day04
 
         for ($i = 0; $i < count($input); $i++) {
             for ($j = 0; $j < count($input[$i]); $j++) {
-                $count += $this->searchForShapedXMAS($i, $j, $input);
+                $count += $this->searchForXShapedMAS($i, $j, $input);
             }
         }
 
@@ -125,7 +125,7 @@ class Day04
         return $count;
     }
 
-    private function searchForShapedXMAS(int $i, int $j, array $input): int
+    private function searchForXShapedMAS(int $i, int $j, array $input): int
     {
 
         if ($input[$i][$j] !== 'A') {
