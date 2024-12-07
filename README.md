@@ -5,17 +5,23 @@ My solutions to the puzzles of [Advent of Code 2024 edition](https://adventofcod
 ## Available solutions
 
 - Day 1
-  - Part 1
-  - Part 2
+    - Part 1
+    - Part 2
 - Day 2
     - Part 1
     - Part 2
 - Day 3
     - Part 1
-    - Part 2 
+    - Part 2
 - Day 4
-  - Part 1
-  - Part 2  
+    - Part 1
+    - Part 2
 - Day 5
+    - Part 1
+    - Part 2   
+- Day 6
+  - Part 1
+  - Part 2
+- Day 7
   - Part 1
   - Part 2   
