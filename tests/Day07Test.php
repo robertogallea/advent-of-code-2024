@@ -15,7 +15,7 @@ class Day07Test extends TestCase
 
         $puzzle = new Day07();
         $result = $puzzle->solveFirstPart($list);
-var_dump($result);
+
         $this->assertEquals($expectedResult, $result);
     }
 
@@ -62,7 +62,7 @@ var_dump($result);
                 "21037: 9 7 18 13".PHP_EOL.
                 "292: 11 6 16 20", 11387
             ],
-            yield 'actual input' => [file_get_contents(__DIR__."/Data/Day07/part2.txt"), 1562]
+            yield 'actual input' => [file_get_contents(__DIR__."/Data/Day07/part2.txt"), 333027885676693]
         ];
     }
 

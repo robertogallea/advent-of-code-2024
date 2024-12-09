@@ -25,3 +25,9 @@ My solutions to the puzzles of [Advent of Code 2024 edition](https://adventofcod
 - Day 7
   - Part 1
   - Part 2   
+- Day 8
+  - Part 1
+  - Part 2
+- Day 9
+  - Part 1
+  - Part 2   
