@@ -24,7 +24,6 @@ class Day09
                 while ($map[$lastFilledBlockId] === '.') {
                     $lastFilledBlockId--;
                 }
-//                $this->dump($map);
             }
             $checksum += $map[$i] * $i;
         }
