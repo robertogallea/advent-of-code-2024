@@ -39,19 +39,21 @@ class Day11
         } else {
             $digits = strlen($currentStone);
             if ($digits % 2 === 0) {
-                $leftPart = intdiv($currentStone, pow(10, intdiv($digits, 2)));
-                $rightPart = $currentStone % pow(10, intdiv($digits, 2));
-                $count = $this->countExpansions($leftPart, $blinks - 1) +
+                $leftPart = intdiv($currentStone, pow(10, $digits / 2));
+                $rightPart = $currentStone % pow(10, $digits / 2);
+                $count =
+                    $this->countExpansions($leftPart, $blinks - 1) +
                     $this->countExpansions($rightPart, $blinks - 1);
             } else {
                 $count = $this->countExpansions($currentStone * 2024, $blinks - 1);
             }
         }
         $this->cache[$cacheKey] = $count;
+
         return $count;
     }
 
-    private function parseInput(string $input)
+    private function parseInput(string $input): array
     {
         return explode(" ", $input);
     }
