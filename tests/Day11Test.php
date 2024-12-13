@@ -44,7 +44,7 @@ class Day11Test extends TestCase
     public static function part2List()
     {
         return [
-            yield 'actual input' => [file_get_contents(__DIR__."/Data/Day11/part1.txt"), 75, 261952051690787]
+            yield 'actual input' => [file_get_contents(__DIR__."/Data/Day11/part2.txt"), 75, 261952051690787]
         ];
     }
 

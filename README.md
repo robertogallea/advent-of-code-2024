@@ -37,3 +37,6 @@ My solutions to the puzzles of [Advent of Code 2024 edition](https://adventofcod
 - Day 11
   - Part 1
   - Part 2   
+- Day 12
+  - Part 1
+  - Part 2   
