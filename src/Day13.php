@@ -7,13 +7,13 @@ class Day13
     public function solveFirstPart(string $input): int
     {
         $machines = $this->parseInput($input);
-        return $this->findPrizes($machines);
+        return $this->findTokens($machines);
     }
 
     public function solveSecondPart(string $input): int
     {
         $machines = $this->parseInput($input, true);
-        return $this->findPrizes($machines);
+        return $this->findTokens($machines);
     }
 
     private function parseInput(string $input, bool $withCorrection = false): array
@@ -51,7 +51,7 @@ class Day13
      * @param  array  $machines
      * @return float
      */
-    public function findPrizes(array $machines): int
+    public function findTokens(array $machines): int
     {
         $result = 0;
 
