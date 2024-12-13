@@ -4,8 +4,6 @@ namespace Robertogallea\AdventOfCode2024;
 
 class Day12
 {
-    protected array $cache = [];
-
     public function solveFirstPart(string $input): int
     {
         $garden = $this->parseInput($input);
