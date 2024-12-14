@@ -133,15 +133,15 @@ class Day12
             $neighborhoodResult = 0;
 
             // traslates w.r.t. the iterated element, the iterated element is now 0,0
-            $traslatedComponent = array_map(fn($currentElement) => [
+            $traslatedComponent = array_map(fn ($currentElement) => [
                 $currentElement[0] - $element[0], $currentElement[1] - $element[1]
             ], $component);
 
             $rotatedComponents = [
                 $traslatedComponent,
-                array_map(fn($currentElement) => [-$currentElement[1], $currentElement[0]], $traslatedComponent),
-                array_map(fn($currentElement) => [-$currentElement[0], -$currentElement[1]], $traslatedComponent),
-                array_map(fn($currentElement) => [$currentElement[1], -$currentElement[0]], $traslatedComponent),
+                array_map(fn ($currentElement) => [-$currentElement[1], $currentElement[0]], $traslatedComponent),
+                array_map(fn ($currentElement) => [-$currentElement[0], -$currentElement[1]], $traslatedComponent),
+                array_map(fn ($currentElement) => [$currentElement[1], -$currentElement[0]], $traslatedComponent),
             ];
 
             if ($this->hasNormalizedAppendix($rotatedComponents)) {

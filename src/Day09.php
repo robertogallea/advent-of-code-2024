@@ -48,8 +48,8 @@ class Day09
                     // move block
                     $emptyBlockSizes[$i] -= $filledBlockSizes[$j];
                     for ($k = 0; $k < $filledBlockSizes[$j]; $k++) {
-                        $map[$k+$emptyBlockStarts[$i]] = $j;
-                        $map[$k+$filledBlockStarts[$j]] = '.';
+                        $map[$k + $emptyBlockStarts[$i]] = $j;
+                        $map[$k + $filledBlockStarts[$j]] = '.';
                     }
                     $emptyBlockStarts[$i] += $filledBlockSizes[$j];
                     break;

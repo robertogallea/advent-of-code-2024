@@ -102,7 +102,7 @@ class Day07
         $solution = (int)$solution;
 
         $numbers = array_map(
-            static fn(string $number): int => (int)$number,
+            static fn (string $number): int => (int)$number,
             explode(' ', $rawNumbers)
         );
 
@@ -112,10 +112,12 @@ class Day07
 
     private function parseInput($list): array
     {
-        return array_map(function ($row) {
-            $parts = explode(':', $row);
-            return [$parts[0], array_filter(explode(' ', $parts[1]))];
-        }, explode("\n", $list)
+        return array_map(
+            function ($row) {
+                $parts = explode(':', $row);
+                return [$parts[0], array_filter(explode(' ', $parts[1]))];
+            },
+            explode("\n", $list)
         );
     }
 }

@@ -103,7 +103,7 @@ class Day10Test extends TestCase
                 "4.6789".PHP_EOL.
                 "56789.", 227
             ],
-            yield 'actual input' => [file_get_contents(__DIR__."/Data/Day10/part2.txt"), 512]
+            yield 'actual input' => [file_get_contents(__DIR__."/Data/Day10/part2.txt"), 1045]
         ];
     }
 

@@ -46,7 +46,7 @@ class Day08
     private function enumerateAntennaTypes(array $map)
     {
         return array_diff(
-            array_unique(array_reduce($map, fn($item, $carry) => array_merge($item, $carry), [])),
+            array_unique(array_reduce($map, fn ($item, $carry) => array_merge($item, $carry), [])),
             ['.']
         );
     }
@@ -96,11 +96,12 @@ class Day08
         }
 
         return array_flip(array_map(
-            fn($item) => "{$item[0]}-{$item[1]}",
+            fn ($item) => "{$item[0]}-{$item[1]}",
             array_filter(
                 $antinodelocations,
-                fn($location) => $location[0] >= 0 && $location[1] >= 0 &&
-                    $location[0] < count($typedMap) && $location[1] < count($typedMap[0]))
+                fn ($location) => $location[0] >= 0 && $location[1] >= 0 &&
+                    $location[0] < count($typedMap) && $location[1] < count($typedMap[0])
+            )
         ));
     }
 
@@ -127,8 +128,10 @@ class Day08
         foreach ($locations as $location) {
             foreach ($locations as $location2) {
                 if ($location !== $location2) {
-                    $antinodeLocations = array_merge($antinodeLocations,
-                        $this->getAntinodeLocationRepeated($location, $location2, $typedMap));
+                    $antinodeLocations = array_merge(
+                        $antinodeLocations,
+                        $this->getAntinodeLocationRepeated($location, $location2, $typedMap)
+                    );
                 }
 
             }
@@ -136,11 +139,12 @@ class Day08
 
 
         return array_flip(array_map(
-            fn($item) => "{$item[0]}-{$item[1]}",
+            fn ($item) => "{$item[0]}-{$item[1]}",
             array_filter(
                 $antinodeLocations,
-                fn($location) => $location[0] >= 0 && $location[1] >= 0 &&
-                    $location[0] < count($typedMap) && $location[1] < count($typedMap[0]))
+                fn ($location) => $location[0] >= 0 && $location[1] >= 0 &&
+                    $location[0] < count($typedMap) && $location[1] < count($typedMap[0])
+            )
         ));
     }
 
