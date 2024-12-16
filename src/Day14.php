@@ -4,7 +4,7 @@ namespace Robertogallea\AdventOfCode2024;
 
 class Day14
 {
-    public function solveFirstPart(string $input, $sizes): int
+    public function solveFirstPart(string $input, array $sizes): int
     {
         $robots = $this->parseInput($input);
 
