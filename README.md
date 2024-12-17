@@ -52,3 +52,6 @@ My solutions to the puzzles of [Advent of Code 2024 edition](https://adventofcod
 - Day 16
   - Part 1
   - Part 2   
+- Day 17
+  - Part 1
+  - Part 2   
