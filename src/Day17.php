@@ -27,8 +27,8 @@ class Day17
     private function parseInput(string $input)
     {
         [$registers, $program] = explode(PHP_EOL.PHP_EOL, $input);
-        $registers = array_map(fn($register) => intval(explode(': ', $register)[1]), explode(PHP_EOL, $registers));
-        $program = array_map(fn($item) => intval($item), explode(',', explode(': ', $program)[1]));
+        $registers = array_map(fn ($register) => intval(explode(': ', $register)[1]), explode(PHP_EOL, $registers));
+        $program = array_map(fn ($item) => intval($item), explode(',', explode(': ', $program)[1]));
 
         return [$registers, $program];
     }

@@ -45,10 +45,10 @@ class Day16
         foreach ($map as $row) {
             foreach ($row as $cell) {
                 echo match ($cell) {
-                    Token::ROBOT->value => "\033[32m",
-                    Token::BOX->value, Token::LEFT_BOX->value, Token::RIGHT_BOX->value => "\033[33m",
-                    Token::WALL->value => "\033[31m",
-                    Token::FREE->value => "\033[30m",
+                    MazeToken::ROBOT->value => "\033[32m",
+                    MazeToken::BOX->value, MazeToken::LEFT_BOX->value, MazeToken::RIGHT_BOX->value => "\033[33m",
+                    MazeToken::WALL->value => "\033[31m",
+                    MazeToken::FREE->value => "\033[30m",
                     default => "\033[0m",
                 }.$cell;
             }
@@ -70,11 +70,11 @@ class Day16
 
         foreach ($map as $i => $row) {
             foreach ($row as $j => $cell) {
-                if ($cell === Token::START->value) {
+                if ($cell === MazeToken::START->value) {
                     $start = [$i, $j];
                 }
 
-                if ($cell === Token::END->value) {
+                if ($cell === MazeToken::END->value) {
                     $end = [$i, $j];
                 }
             }
@@ -160,7 +160,7 @@ class Day16
 }
 
 
-enum Token: string
+enum MazeToken: string
 {
     case WALL = '#';
     case FREE = '.';
