@@ -72,13 +72,4 @@ class Day19
 
         return $this->cache[$wantedTowel] = $options; // Cache and return total ways
     }
-
-    private function dumpSpaces(int $depth)
-    {
-        for ($i = 0; $i < $depth; $i++) {
-            $result .= ' ';
-        }
-        return $result;
-    }
-
 }
