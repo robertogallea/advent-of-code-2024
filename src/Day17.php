@@ -2,8 +2,6 @@
 
 namespace Robertogallea\AdventOfCode2024;
 
-use SplPriorityQueue;
-
 class Day17
 {
     public function solveFirstPart(string $input): string

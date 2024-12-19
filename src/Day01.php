@@ -11,9 +11,8 @@ class Day01
         sort($left);
         sort($right);
         $diffs = array_map(fn ($first, $second) => abs($first - $second), $left, $right);
-        $sum = array_reduce($diffs, fn ($first, $second) => $first + $second, 0);
 
-        return $sum;
+        return array_reduce($diffs, fn ($first, $second) => $first + $second, 0);
 
 
     }

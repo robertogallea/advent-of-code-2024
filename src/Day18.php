@@ -2,8 +2,6 @@
 
 namespace Robertogallea\AdventOfCode2024;
 
-use SplPriorityQueue;
-
 class Day18
 {
     public function solveFirstPart(string $input, int $gridSize, int $nBytes): string
