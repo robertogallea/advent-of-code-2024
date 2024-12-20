@@ -10,7 +10,7 @@ class Day20
 
         [$from, $to] = $this->findExtrema($map);
 
-        $points = $this->bfs($map, $from);
+        $points = $this->findPath($map, $from);
 
         return $this->getCheatingPaths($points, $saving, 2);
     }
@@ -21,7 +21,7 @@ class Day20
 
         [$from, $to] = $this->findExtrema($map);
 
-        $points = $this->bfs($map, $from);
+        $points = $this->findPath($map, $from);
 
         return $this->getCheatingPaths($points, $saving, 20);
     }
@@ -52,7 +52,7 @@ class Day20
 
 
 
-    private function bfs(array $grid, array $start)
+    private function findPath(array $grid, array $start): array
     {
         $rows = count($grid);
         $cols = count($grid[0]);
