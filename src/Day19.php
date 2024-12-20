@@ -6,7 +6,7 @@ class Day19
 {
     private array $cache = [];
 
-    public function solveFirstPart(string $input): string
+    public function solveFirstPart(string $input): int
     {
         [$availableTowels, $wantedTowels] = $this->parseInput($input);
 
@@ -21,7 +21,7 @@ class Day19
         return $arranged;
     }
 
-    public function solveSecondPart(string $input): string
+    public function solveSecondPart(string $input): int
     {
 
         [$availableTowels, $wantedTowels] = $this->parseInput($input);

@@ -104,7 +104,7 @@ class Day16
             $current = $queue->extract();
             [$r, $c, $dir, $cost, $path] = $current['data'];
 
-            // Se fuori griglia o su un muro, salta
+            // if outside grid or on a wall, skip
             if ($r < 0 || $r >= $rows || $c < 0 || $c >= $cols || $grid[$r][$c] === '#') {
                 continue;
             }
