@@ -24,7 +24,6 @@ class Day22
     public function solveSecondPart(string $input): int
     {
         $initialCodes = $this->parseInput($input);
-        $result = 0;
 
         foreach ($initialCodes as $code) {
             $codes = [$code];
