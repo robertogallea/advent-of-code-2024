@@ -45,7 +45,7 @@ class Day23
 
     private function parseInput(string $input)
     {
-        return array_map(fn($connection) => explode('-', $connection), explode("\n", $input));
+        return array_map(fn ($connection) => explode('-', $connection), explode("\n", $input));
     }
 
     private function makeAdjMap(array $map): array
