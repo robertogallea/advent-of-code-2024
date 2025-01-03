@@ -70,3 +70,6 @@ My solutions to the puzzles of [Advent of Code 2024 edition](https://adventofcod
 - Day 22
   - Part 1
   - Part 2   
+- Day 23
+  - Part 1
+  - Part 2   
