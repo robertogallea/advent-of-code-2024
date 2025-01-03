@@ -40,7 +40,7 @@ class Day24
                 $candidates[] = $gateKey;
             }
 
-            // xor with x and y input, there must exist a XOR with this gate as input
+            // XOR gate with x and y input, there must exist a XOR with this gate as input
             if (
                 ($gate['type'] === 'XOR') &&
                 (
@@ -64,7 +64,7 @@ class Day24
                 }
             }
 
-            // and with x and y input, there must exist an OR with this gate as input
+            // AND gate with x and y input, there must exist an OR with this gate as input
             if (
                 ($gate['type'] === 'AND') &&
                 (
