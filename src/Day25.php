@@ -64,7 +64,7 @@ class Day25
         return [$locksHeights, $keysHeights];
     }
 
-    private function tryWith(array $lock, array $key)
+    private function tryWith(array $lock, array $key): bool
     {
         for ($i = 0; $i < sizeof($lock); $i++) {
             if ($lock[$i] + $key[$i] >= 6) {
