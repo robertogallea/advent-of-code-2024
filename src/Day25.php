@@ -22,12 +22,6 @@ class Day25
     }
 
 
-    public function solveSecondPart(string $input): int
-    {
-
-        return -1;
-    }
-
     private function parseInput(string $input)
     {
         $schematics = explode(PHP_EOL.PHP_EOL, $input);
